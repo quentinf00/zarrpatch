@@ -1,0 +1,23 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+**/__pycache__
+.pytest_cache/
+dist/
+benchmarks/data
+
+# local machine configuration (paths to private datasets / scratch)
+.env
+
+# internal planning notes, not part of the published project
+plans/
+RECOMMENDATIONS.md
+
+# benchmarks and worked examples on private datasets (need .env paths)
+benchmarks/hafs_*.py
+benchmarks/sst_*.py
+examples/hafs_mapping.py
+examples/sst_mapping.py
+
+# raw benchmark records (contain the host name)
+benchmarks/results_ecosystem*.json
